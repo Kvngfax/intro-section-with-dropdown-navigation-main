@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="app.js" defer></script>
+
+
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <nav>
+        <img src="images/logo.svg" alt="logo">
+
+
+        <ul class="nav_links" id="nav-links">
+          <ul class="nav_links_1">
+
+            <img src="images/icon-close-menu.svg" alt="" id="close" class="menu_close">
+
+            <li class="dropdown trying">
+              Features <img src="./images/icon-arrow-down.svg" alt="dropdown arrow">
+              <ul class="dropdown-menu" id="myDropdown">
+                <li><img src="images/icon-todo.svg" alt="icon">Todo List</li>
+                <li><img src="images/icon-calendar.svg" alt="icon">Calender</li>
+                <li><img src="images/icon-reminders.svg" alt="icon">Reminders</li>
+                <li><img src="images/icon-planning.svg" alt="icon">Planning</li>
+              </ul>
+            </li>
+            <li class="dropdown trying">
+              Company <img src="images/icon-arrow-down.svg" alt="dropdown arrow">
+              <ul class="dropdown-menu menu_2">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li class="trying">Careers</li>
+            <li class="trying">About</li>
+
+
+          </ul>
+
+          <ul class=" nav_links_2" id="nav-links-2">
+            <li>Login</li>
+            <button class="register">Register</button>
+          </ul>
+
+        </ul>
+
+
+        <img src="images/icon-menu.svg" alt="menu" class="menu" id="open">
+      </nav>
+    </header>
+
+
+
+
+    <main>
+      <div class="main_container">
+
+        <img src="images/image-hero-mobile.png" alt="">
+        <div class="content">
+          <h1 class="content_header">Make remote work</h1>
+          <p class="content_info">Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+
+          <div class="content_clients">
+            <img src="images/client-databiz.svg" alt="client">
+            <img src="images/client-audiophile.svg" alt="client">
+            <img src="images/client-meet.svg" alt="client">
+            <img src="images/client-maker.svg" alt="client">
+          </div>
+        </div>
+      </div>
+
+      <div class="big_image">
+        <picture>
+          <source media="(max-width: 800px)" srcset="images/image-hero-desktop.png">
+          <img src="images/image-hero-desktop.png" alt="image" class="trying">
+        </picture>
+
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/kvngfax">Abdulbasit Fasasi</a>.
+    </div>
+  </footer>
+</body>
+
+</html>
